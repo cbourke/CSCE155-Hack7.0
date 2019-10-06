@@ -27,21 +27,38 @@ Pixel **loadImage(const char *filePath, int *height, int *width);
 void saveImage(const char *filePath, Pixel **image, int height, int width);
 
 /**
- * TODO: add documentation
+ * Create a deep copy of a given image (a separate array containing all the same elements in the same order)
+ *
+ * @param image a 2D array of {@code Pixel}s to copy
+ * @param height the height of the image
+ * @param width the width of the image
+ * @return the created deep copy
  */
 Pixel ** copyImage(Pixel **image, int height, int width);
 
 /**
- * TODO: add documentation
+ * Flip the image horizontally (along a vertical axis, as though a mirror was held to the right side of the image)
+ *
+ * @param image a 2D array of {@code Pixel}s to flip
+ * @param height the height of the image
+ * @param width the width of the image
  */
 void flipHorizontal(Pixel **image, int height, int width);
 
 /**
- * TODO: add documentation
+ * Flip the image vertically (along a horizontal axis, as though a mirror was held above the image)
+ *
+ * @param image a 2D array of {@code Pixel}s to flip
+ * @param height the height of the image
+ * @param width the width of the image
  */
 void flipVertical(Pixel **image, int height, int width);
 
 /**
- * TODO: add documentation
+ * Rotate the image 90° clockwise
+ *
+ * @param image a 2D array of {@code Pixel}s to rotate
+ * @param height the height of the image
+ * @param width the width of the image
  */
 Pixel ** rotateClockwise(Pixel **image, int height, int width);
